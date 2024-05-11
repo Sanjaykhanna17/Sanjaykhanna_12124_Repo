@@ -44,7 +44,7 @@ public class TransactionService {
 
 			transactionRepo.addTransaction(transaction);
 		} catch (Exception e) {
-			e.printStackTrace();
+
 			msg = "Failed";
 		}
 		return msg;

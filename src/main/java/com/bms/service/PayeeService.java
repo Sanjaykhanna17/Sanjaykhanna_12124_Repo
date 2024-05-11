@@ -13,7 +13,7 @@ import com.bms.repo.PayeeRepo;
 
 @Service
 public class PayeeService {
-	
+
 	@Autowired
 	private PayeeRepo payeeRepo;
 	@Autowired
@@ -29,7 +29,7 @@ public class PayeeService {
 			payeeRepo.addPayee(payee);
 			msg = "success";
 		} catch (Exception e) {
-			e.printStackTrace();
+
 			msg = "Failed to add Payee";
 		}
 
@@ -46,7 +46,7 @@ public class PayeeService {
 			;
 			msg = "success";
 		} catch (Exception e) {
-			e.printStackTrace();
+
 			msg = "Failed to delete Payee";
 		}
 
@@ -61,7 +61,7 @@ public class PayeeService {
 			payeeRepo.updatePayee(payee);
 			msg = "success";
 		} catch (Exception e) {
-			e.printStackTrace();
+
 			msg = "Failed to update Payee";
 		}
 
