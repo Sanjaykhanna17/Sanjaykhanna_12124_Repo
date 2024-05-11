@@ -1,5 +1,9 @@
 FROM openjdk:17
+
 WORKDIR /app
-COPY ${JAR_FILE} app.jar
-EXPOSE 8084
-CMD ["java", "-jar", "BankManagementSystem-0.0.1-SNAPSHOT.jar"]
+
+COPY  target/BankManagementSystem-0.0.1-SNAPSHOT.war /app/BankManagementSystem-0.0.1-SNAPSHOT.war
+
+EXPOSE 1330
+
+CMD ["java", "-jar", "/app/BankManagementSystem-0.0.1-SNAPSHOT.war"]
